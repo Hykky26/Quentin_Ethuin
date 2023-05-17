@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+}
+
+body {
+    background-color: #F5EBE0;
+}
+
+
+#navBar {
+    background-color: #5e548e;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2.7rem;
+    height: 10vh;
+}
+
+#navBar .fakeButton {
+    font-size: 1rem;
+    border: 2px solid #000;
+    padding: 1rem;
+    border-radius: 5px;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 158, 1) 100%);
+}
+
+.fakeButton:hover {
+    box-shadow: #FFF -12px 8px;
+    transition: 2s;
+}
+
+
+#navBar a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1 {
+    color: #000;
+}
+
+#topDiv {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.topIcon {
+    width: 5%;
+}
+
+#aboutMe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    width: 50%;
+    margin-top: 50px;
+}
+
+
+.likeIcon {
+    width: 100px;
+    height: 100px;
+}
+
+#footerNav {
+    height: 40vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#footerNav a {
+    color: #000;
+    text-decoration: none;
+}
+
+#footerNav a:hover {
+    border: solid 2px #5e548e;
+    padding: 8px;
+    transition: .7s;
+}
+
+.centerDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    p {
+        width: 70%;
+    }
+
+    .topIcon {
+        width: 10%;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        width: 70%;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+    .likeIcon {
+        display: none;
+    }
+
+    p {
+        width: 100%;
+        padding: 8px;
+    }
+
+    #footerNav {
+        height: 10vh;
+    }
+}

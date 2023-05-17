@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+}
+
+body {
+    background-color: #F5EBE0;
+}
+
+#firstPath {
+    width: 100vw;
+    height: 45vh;
+}
+
+h1 {
+    color: #F5EBE0;
+    font-size: 2rem;
+    rotate: 270deg;
+    position: absolute;
+    top: 130px;
+    left: -70px;
+}
+
+#firstContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    padding-left: 150px;
+    font-size: 1.7rem;
+}
+
+.techIcon {
+    width: 15%;
+    object-fit: cover;
+}
+
+#secondPath {
+    height: 45vh;
+    width: 100vw;
+}
+
+.iconDiv {
+    width: 40%;
+    text-align: center;
+}
+
+#secondContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 150px;
+    font-size: 1.7rem;
+}
+
+.cmIcon {
+    width: 45%;
+    object-fit: cover;
+}
+
+.footerDiv {
+    rotate: 270deg;
+    position: absolute;
+    left: -140px;
+    bottom: 210px
+}
+
+.footerDiv a {
+    color: #F5EBE0;
+    text-decoration: none;
+}
+
+.footerDiv a:hover {
+    border: #FFF 2px solid;
+    padding: 8px;
+    transition: .7s;
+}
+
+#navBar {
+    width: 100vw;
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.topIcon {
+    width: 2%;
+}
+
+#navBar a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+#sidebar {
+
+    height: 100vh;
+    width: 10vh;
+    background-color: #5e548e;
+
+}
+
+.underline {
+    border-bottom: 3px solid #5e548e;
+}
+
+@media screen and (max-width: 999px) {
+    #firstContainer p {
+        font-size: 1.4rem;
+    }
+
+    #secondContainer p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    #firstContainer,
+    #secondContainer {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 0 auto;
+        padding-left: 100px;
+    }
+
+    #secondContainer {
+        margin-top: 20px;
+    }
+
+    #firstContainer p,
+    #secondContainer p {
+        font-size: 1.6rem;
+    }
+
+    .iconDiv {
+        width: 100%;
+    }
+
+    .techIcon {
+        width: 15%;
+    }
+
+    .topIcon {
+        width: 5%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    #firstContainer p,
+    #secondContainer p {
+        font-size: 1.2rem;
+        justify-content: space-around;
+    }
+
+    #secondContainer {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        left: -50px;
+    }
+
+    .footerDiv {
+        left: -120px;
+    }
+
+    .footerDiv a {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    #firstContainer p,
+    #secondContainer p {
+        font-size: 1rem;
+    }
+}

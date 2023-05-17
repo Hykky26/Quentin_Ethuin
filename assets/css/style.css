@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerBody {
+    background-image: url("/assets/img/background-7234758_1280.png");
+    background-size: cover;
+    /* background-size: 100vw 100vh; */
+    background-repeat: no-repeat;
+
+
+}
+
+
+.darker {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.153);
+}
+
+.headerDiv {
+    text-align: end;
+    padding: 20px;
+}
+
+.headerImg {
+    width: 5%;
+}
+
+.container {
+    font-family: 'Silkscreen', cursive;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    padding-left: 10%;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 10vw;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3.5vw;
+    color: #FFF;
+    padding-left: 13px;
+    text-shadow: #000 12px;
+
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.lastP {
+    padding-top: 20px;
+}
+
+.firstSectionFooter {
+    font-family: 'Silkscreen', cursive;
+}
+
+.footerDiv {
+    rotate: 270deg;
+    position: absolute;
+    right: -130px;
+    bottom: 200px
+}
+
+.footerDiv a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footerDiv a:hover {
+    border: #a2d2ff 2px solid;
+    padding: 8px;
+    transition: 1s;
+}
+
+#path {
+    height: 100vh;
+}
+
+@media screen and (max-width: 960px) {
+    .headerImg {
+        width: 10%
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .headerImg {
+        width: 15%;
+    }
+
+    h1 {
+        font-size: 15vw;
+    }
+
+    .container p {
+        font-size: 5vw;
+    }
+
+    .firstSectionFooter {
+        height: 18vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .footerDiv {
+        position: static;
+        rotate: none;
+    }
+
+}
+
+@media screen and (max-width: 389px) {
+    .firstSectionFooter {
+        height: 20vh;
+    }
+
+    .footerDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerDiv a {
+        padding: 8px;
+    }
+}
