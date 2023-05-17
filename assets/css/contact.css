@@ -77,6 +77,7 @@ nav a {
 .top {
     display: flex;
     justify-content: center;
+
 }
 
 .topIcon2 {
@@ -97,6 +98,10 @@ nav a {
     #below {
         height: 80%;
         width: 90%;
+    }
+
+    .otherFont {
+        font-size: 2rem;
     }
 }
 
