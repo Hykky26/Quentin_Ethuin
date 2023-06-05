@@ -105,6 +105,19 @@ nav a {
     }
 }
 
+@media screen and (max-width: 730px) {
+    .otherFont {
+        font-size: 1.3rem;
+
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .otherFont {
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 450px) {
     #below {
         box-shadow: none;
