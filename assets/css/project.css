@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #F5EBE0;
+    font-family: 'VT323', monospace;
+}
+
+#navBar {
+    width: 100vw;
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.topIcon {
+    width: 2%;
+}
+
+#sidebar {
+
+    height: 100vh;
+    width: 10vh;
+    background-color: #5e548e;
+    position: absolute;
+}
+
+h1 {
+    color: #F5EBE0;
+    font-size: 2.5rem;
+    rotate: 270deg;
+    position: absolute;
+    top: 130px;
+    left: -20px;
+    z-index: 12;
+}
+
+.footerDiv {
+    rotate: 270deg;
+    position: absolute;
+    left: -120px;
+    bottom: 210px
+}
+
+.footerDiv a {
+    color: #F5EBE0;
+    text-decoration: none;
+    font-size: 1.7rem;
+
+}
+
+.footerDiv a:hover {
+    border: #FFF 2px solid;
+    padding: 8px;
+    transition: .7s;
+}
+
+.shifumi {
+    height: 500px;
+    width: 800px;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 4rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width: 920px) {
+    .shifumi {
+        height: 400px;
+        width: 700px;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 801px) {
+    .shifumi {
+        height: 300px;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 703px) {
+    .shifumi {
+        height: 300px;
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 607px) {
+    .shifumi {
+        height: 300px;
+        width: 400px;
+    }
+
+}
