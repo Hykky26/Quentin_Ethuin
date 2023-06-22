@@ -93,6 +93,21 @@ p {
         display: none;
     }
 
+    .footerDiv {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        rotate: none;
+        width: 100vw;
+        left: 0;
+    }
+
+    .footerDiv a {
+        color: #000;
+        font-size: 3rem;
+    }
+
 }
 
 @media screen and (max-width: 801px) {
@@ -116,4 +131,25 @@ p {
         width: 400px;
     }
 
+    .footerDiv a {
+
+        font-size: 2.4rem;
+    }
+
+
+}
+
+@media screen and (max-width: 422px) {
+    .footerDiv a {
+        font-size: 2rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 340px) {
+    .footerDiv a {
+        font-size: 1rem;
+    }
 }
