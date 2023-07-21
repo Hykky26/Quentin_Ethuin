@@ -61,16 +61,24 @@ h1 {
     transition: .7s;
 }
 
-.shifumi {
-    height: 500px;
-    width: 800px;
+.image {
+    height: 300px;
+    width: 500px;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .projectContainer {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
 }
 
 h2 {
@@ -81,6 +89,12 @@ h2 {
 
 p {
     font-size: 1.7rem;
+}
+
+@media screen and (max-width: 1280px) {
+    .projectContainer {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 920px) {
@@ -94,18 +108,15 @@ p {
     }
 
     .footerDiv {
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        rotate: none;
-        width: 100vw;
-        left: 0;
+        rotate: 270deg;
+        position: absolute;
+        left: -100px;
+        bottom: 161px
     }
 
     .footerDiv a {
         color: #000;
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
 }
@@ -114,6 +125,10 @@ p {
     .shifumi {
         height: 300px;
         width: 600px;
+    }
+
+    h2 {
+        font-size: 3rem;
     }
 }
 
@@ -131,9 +146,15 @@ p {
         width: 400px;
     }
 
+    .footerDiv {
+        rotate: none;
+        top: 10px;
+        left: 30%;
+    }
+
     .footerDiv a {
 
-        font-size: 2.4rem;
+        font-size: 1.2rem;
     }
 
 
@@ -141,7 +162,7 @@ p {
 
 @media screen and (max-width: 422px) {
     .footerDiv a {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
 
